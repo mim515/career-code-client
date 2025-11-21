@@ -19,6 +19,11 @@ export default function NavBar() {
       <li>
         <NavLink to="/">Home</NavLink>
       </li>
+      {
+        user &&  <>
+        <NavLink to="/myApplications">My Applications</NavLink>
+        </>
+      }
     </>
   );
   return (
