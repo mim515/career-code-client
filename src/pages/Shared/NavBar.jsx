@@ -19,9 +19,17 @@ export default function NavBar() {
       <li>
         <NavLink to="/">Home</NavLink>
       </li>
+      {/* for applicant. check roles as well */}
       {
         user &&  <>
         <NavLink to="/myApplications">My Applications</NavLink>
+        </>
+      }
+      {/* for recruiter. check role as well */}
+      {
+        user && <>
+        <NavLink to="/addJob">Add Job</NavLink>
+        <NavLink to="/mypostedjobs">My posted Jobs</NavLink>
         </>
       }
     </>

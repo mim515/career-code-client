@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function JobApplications({application, index}) {
-  const {company_logo, company, title} = application;
+  const {applicant, company_logo, company, title} = application;
   return (
     <tr>
       <th>
@@ -13,23 +13,17 @@ export default function JobApplications({application, index}) {
         <div className="flex items-center gap-3">
           <div className="avatar">
             <div className="mask mask-squircle h-12 w-12">
-              <img
-                src={company_logo}
-              />
+             
             </div>
           </div>
           <div>
-            <div className="font-bold">{company}</div>
+            <div className="font-bold"> </div>
             <div className="text-sm opacity-50">{title}</div>
           </div>
         </div>
       </td>
       <td>
-        Zemlak, Daniel and Leannon
-        <br />
-        <span className="badge badge-ghost badge-sm">
-          Desktop Support Technician
-        </span>
+        <h3>{applicant}</h3>
       </td>
       <td>Purple</td>
       <th>

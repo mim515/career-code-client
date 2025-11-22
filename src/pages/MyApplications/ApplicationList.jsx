@@ -18,7 +18,7 @@ export default function ApplicationList({ MyApplicationPromise }) {
                 </label>
               </th>
               <th>Name</th>
-              <th>Job</th>
+              <th>Email</th>
               <th>Favorite Color</th>
               <th></th>
             </tr>
