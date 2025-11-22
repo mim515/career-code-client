@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function JobApplications({application, index}) {
-  const {applicant, company_logo, company, title} = application;
+  const {applicant,  title} = application;
   return (
     <tr>
       <th>
